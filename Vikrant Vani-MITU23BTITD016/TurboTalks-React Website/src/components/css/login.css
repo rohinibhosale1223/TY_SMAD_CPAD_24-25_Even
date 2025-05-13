@@ -1,0 +1,131 @@
+.loginContainer {
+    background-image: url('../assets/p.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+}
+
+.form {
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    color: white;
+    margin: 10px 0;
+}
+
+.signInLink {
+    color: white;
+    text-decoration: none;
+}
+
+.signInLink:hover {
+    color: #FF0000;
+}
+
+.input {
+    width: 350px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.input.valid {
+    border: 4px solid green;
+}
+
+.input.invalid {
+    border: 4px solid red;
+}
+
+.registerLink {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.registerLink:hover {
+    color: #FF0000;
+}
+
+.button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-family: fantasy;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.loginButton {
+    composes: button;
+    width: 100px;
+    height: 50px;
+    background-color: #FF0000;
+    margin: 20px auto;
+    display: block;
+}
+
+.loginButton:hover {
+    background-color: #8B0000;
+}
+
+.loginButton:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+.showPassButton {
+    composes: button;
+    width: 110px;
+    height: 37px;
+    background-color: #FF0000;
+    margin: 15px auto;
+    display: block;
+}
+
+.showPassButton:hover {
+    background-color: #8B0000;
+}
+
+/* Add spacing between form elements */
+.form > * {
+    margin: 8px 0;
+}
+
+/* Create a container for the password input and show password button */
+.passwordContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Add some spacing at the bottom of the form */
+.form > button:last-child {
+    margin-bottom: 20px;
+}
+
+/* Center the bottom section content */
+.form > div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
