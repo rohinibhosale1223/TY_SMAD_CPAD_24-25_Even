@@ -1,0 +1,60 @@
+.header {
+  background: #000;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.header-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 0.2rem;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem 0.5rem 2rem;
+  background: #000;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0.2rem 0.5rem;
+}
+
+.nav-link.active {
+  color: #ffd600;
+  border-bottom: 2px solid #ffd600;
+}
+
+.nav-link:hover {
+  color: #ffd600;
+} 

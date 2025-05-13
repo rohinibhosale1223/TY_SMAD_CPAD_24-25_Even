@@ -1,0 +1,147 @@
+.registrationContainer {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('../assets/p.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+}
+
+.form {
+    border: 2px solid black;
+    color: white;
+    width: 500px;
+    height: 570px;
+    font-family: fantasy;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+.heading {
+    color: white;
+    margin: 10px 0;
+}
+
+input,
+select {
+    font-family: fantasy;
+}
+
+.name,
+.email {
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.password,
+.cpassword,
+.number {
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.menu {
+    width: 180px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.password-cpassword-row {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+.number-menu-row {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+.registerButton {
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #FF0000;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    font-family: fantasy;
+    margin: 20px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.registerButton:hover {
+    background-color: #8B0000;
+}
+
+.loginLink {
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.loginLink:hover {
+    color: #FF0000;
+}
+
+label,
+input[type='checkbox'] {
+    margin-bottom: 5px;
+}
+
+.checkbox-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0 0 0;
+    width: 80%;
+}
+
+.checkbox-row label {
+    color: white;
+    font-size: 0.95rem;
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    .form {
+        width: 95vw;
+        min-width: 0;
+        height: auto;
+        padding: 10px 0;
+    }
+    .name, .email, .password, .cpassword, .number, .menu {
+        width: 90vw;
+        min-width: 0;
+    }
+    .password-cpassword-row, .number-menu-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
