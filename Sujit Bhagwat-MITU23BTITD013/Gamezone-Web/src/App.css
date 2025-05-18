@@ -1,0 +1,20 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1b2838;
+  color: #c7d5e0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+  padding: 2rem;
+}
+
+button {
+  cursor: pointer;
+}
